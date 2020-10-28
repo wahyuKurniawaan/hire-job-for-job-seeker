@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        tools:context=".OnBoardActivity">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/background"
+            android:scaleType="centerCrop"
+            android:src="@drawable/true_agency"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha=".8"
+            android:background="@color/primaryColor"
+            android:contentDescription="@string/shades"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:contentDescription="@string/application_icon"
+            android:src="@drawable/ic_peworld"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/_16sdp"
+            android:text="@string/on_board_title"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_28ssp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_icon" />
+
+        <Button
+            android:id="@+id/button_login_for_recruiter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:background="@drawable/my_button"
+            android:padding="@dimen/_12sdp"
+            android:text="@string/login_as_recruiter"
+            android:textColor="@color/primaryColor"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_16sdp"
+            android:text="@string/or"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toTopOf="@id/button_login_for_recruiter"
+            app:layout_constraintEnd_toStartOf="@id/divider_right"
+            app:layout_constraintStart_toEndOf="@id/divider_left" />
+
+        <View
+            android:id="@+id/divider_left"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_2sdp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toBottomOf="@id/tv_or"
+            app:layout_constraintEnd_toStartOf="@id/tv_or"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_or" />
+
+        <View
+            android:id="@+id/divider_right"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_2sdp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toBottomOf="@id/tv_or"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_or"
+            app:layout_constraintTop_toTopOf="@id/tv_or" />
+
+        <Button
+            android:id="@+id/button_login_for_job_seeker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:background="@drawable/my_button"
+            android:padding="@dimen/_12sdp"
+            android:text="@string/login_as_job_seeker"
+            android:textColor="@color/primaryColor"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintBottom_toTopOf="@id/tv_or"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

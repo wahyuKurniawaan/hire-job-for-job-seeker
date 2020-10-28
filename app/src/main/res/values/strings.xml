@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">Hire Job Engineer</string>
+    <string name="application_icon">Application Icon</string>
+    <string name="hire_job_apps_for_software_developers">Hire Job Apps For Software Developers</string>
+    <string name="background">BackGround</string>
+    <string name="shades">Shades</string>
+    <string name="on_board_title">Find a talented and best developer in various fields of expertise</string>
+    <string name="login_as_recruiter">Login As Recruiter</string>
+    <string name="or">Or</string>
+    <string name="login_as_job_seeker">Login As Job Seeker</string>
+    <string name="login">Login</string>
+    <string name="login_description">Welcome to Peworld hire application</string>
+    <string name="email">Email</string>
+    <string name="enter_email_address">Enter email address</string>
+    <string name="password">Password</string>
+    <string name="enter_password">Enter password</string>
+    <string name="forgot_password">forgot password ?</string>
+    <string name="dont_have_an_account">Don\'t have an account?</string>
+    <string name="register_here">Register here</string>
+    <string name="register">Register</string>
+    <string name="register_detail">Create your account and join to Peworld hire application</string>
+    <string name="full_name">Full Name</string>
+    <string name="enter_your_full_name">Enter your full name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="enter_phone_number">Enter phone number</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="offers">Offers</string>
+    <string name="profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="job_title">Job Title</string>
+    <string name="status_job">Status Job</string>
+    <string name="location_icon">Location Icon</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="choose_a_sort_method">choose a sort method</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="skill">Skill</string>
+    <string name="list_skill">List Skill</string>
+    <string name="search_value">Search Value</string>
+    <string name="search_shorting_menu">Search Shorting menu</string>
+    <string name="image_notify_no_result">Image Notify No Result</string>
+    <string name="no_results">No Results !</string>
+    <string name="there_are_no_project_offers_for_you">There are no project offers for you</string>
+    <string name="offers_icon">Offers Icon</string>
+    <string name="project_name">Project Name</string>
+    <string name="project_description">Project Description</string>
+    <string name="project_price">Project Price</string>
+    <string name="project_duration">Project Duration</string>
+    <string name="offered_by">Offered By :</string>
+    <string name="recruiter_name">Recruiter Name</string>
+    <string name="waiting_for_response">Waiting For Response</string>
+    <string name="approved">Approved</string>
+    <string name="rejected">Rejected</string>
+    <string name="descripion">Descripion</string>
+    <string name="instagram">Instagram</string>
+    <string name="linkedin">Linkedin</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="portofolio">Portofolio</string>
+    <string name="portofolio_name">Portofolio Name</string>
+    <string name="publish_link">Publish Link</string>
+    <string name="repository_link">Repository Link</string>
+    <string name="type">Type</string>
+    <string name="work_experiences">Work Experiences</string>
+    <string-array name="job_titles">
+        <item>Android Developer</item>
+        <item>Web Developer</item>
+    </string-array>
+    <string-array name="sort_methods">
+        <item>Sort By Name</item>
+        <item>Sort By Skill</item>
+        <item>Sort By Location</item>
+        <item>Sort By Job Title</item>
+        <item>Sort By Status Job</item>
+    </string-array>
+</resources>

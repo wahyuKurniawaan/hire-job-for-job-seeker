@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        tools:context=".dashboard.offers.offersBy.OfferedByActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/top_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:background="@color/primaryColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="Profile Recruiter" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/top_toolbar">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageProfile"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/profile_image"
+                    android:src="@drawable/ic_person"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:background="@color/white"
+                    app:cardCornerRadius="@dimen/_15sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/imageProfile">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_4sdp">
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:gravity="center_horizontal"
+                            android:includeFontPadding="false"
+                            android:text="@string/full_name"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/_18ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_job_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:gravity="center_horizontal"
+                            android:includeFontPadding="false"
+                            android:text="@string/job_title"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/_14ssp" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_4sdp">
+
+                            <ImageView
+                                android:id="@+id/iv_location"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:contentDescription="@string/location_icon"
+                                android:src="@drawable/ic_baseline_location_on_24"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/tv_city"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintHorizontal_chainStyle="packed"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:tint="@color/primaryColor" />
+
+                            <TextView
+                                android:id="@+id/tv_city"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:gravity="center_horizontal"
+                                android:includeFontPadding="false"
+                                android:text="@string/city"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/_11ssp"
+                                app:layout_constraintBottom_toBottomOf="@id/iv_location"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toEndOf="@+id/iv_location"
+                                app:layout_constraintTop_toTopOf="@id/iv_location" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:id="@+id/tv_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:gravity="center_horizontal"
+                            android:includeFontPadding="false"
+                            android:text="@string/descripion"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/_11ssp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_link"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_16sdp"
+                    android:background="@color/white"
+                    app:cardCornerRadius="@dimen/_15sdp"
+                    app:layout_constraintTop_toBottomOf="@id/cardProfile">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_4sdp">
+
+                        <TextView
+                            android:id="@+id/tv_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:autoLink="email"
+                            android:drawablePadding="@dimen/_8sdp"
+                            android:gravity="fill_vertical"
+                            android:includeFontPadding="false"
+                            android:text="@string/email"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/_11ssp"
+                            app:drawableStartCompat="@drawable/ic_outline_email_24"
+                            app:drawableTint="@color/primaryColor" />
+
+                        <TextView
+                            android:id="@+id/tv_instagram"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:autoLink="web"
+                            android:drawablePadding="@dimen/_8sdp"
+                            android:gravity="fill_vertical"
+                            android:includeFontPadding="false"
+                            android:text="@string/instagram"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/_11ssp"
+                            app:drawableStartCompat="@drawable/ic_instagram" />
+
+                        <TextView
+                            android:id="@+id/tv_linkedin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:layout_marginBottom="@dimen/_8sdp"
+                            android:autoLink="web"
+                            android:drawablePadding="@dimen/_8sdp"
+                            android:gravity="fill_vertical"
+                            android:includeFontPadding="false"
+                            android:text="@string/linkedin"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/_11ssp"
+                            app:drawableStartCompat="@drawable/ic_linkedin" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/button_approved"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_16sdp"
+                    android:background="@drawable/my_button"
+                    android:backgroundTint="@color/ColorGreen"
+                    android:padding="@dimen/_12sdp"
+                    android:text="@string/accept"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cv_link"
+                    tools:targetApi="lollipop" />
+
+                <Button
+                    android:id="@+id/button_Reject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_16sdp"
+                    android:background="@drawable/my_button"
+                    android:backgroundTint="@color/ColorRed"
+                    android:padding="@dimen/_12sdp"
+                    android:text="@string/reject"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/button_approved"
+                    tools:targetApi="lollipop" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/_8sdp">
+
+                <ImageView
+                    android:id="@+id/iv_image"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:contentDescription="@string/offers_icon"
+                    android:src="@drawable/ic_undraw_code_typing"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_duration"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tv_name" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:includeFontPadding="false"
+                    android:text="@string/project_name"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/_18ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/iv_image"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:includeFontPadding="false"
+                    android:text="@string/project_description"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/iv_image"
+                    app:layout_constraintTop_toBottomOf="@id/tv_name"
+                    tools:ignore="LabelFor" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:includeFontPadding="false"
+                    android:text="@string/project_price"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/iv_image"
+                    app:layout_constraintTop_toBottomOf="@id/tv_description" />
+
+                <TextView
+                    android:id="@+id/tv_duration"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:includeFontPadding="false"
+                    android:text="@string/project_duration"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/iv_image"
+                    app:layout_constraintTop_toBottomOf="@id/tv_price" />
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_duration"
+                    tools:layout_editor_absoluteY="6dp" />
+
+                <TextView
+                    android:id="@+id/tv_offered_by"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:includeFontPadding="false"
+                    android:text="@string/offered_by"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/divider" />
+
+                <TextView
+                    android:id="@+id/tv_recruiter"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:includeFontPadding="false"
+                    android:text="@string/recruiter_name"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_offered_by"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@id/tv_offered_by"
+                    app:layout_constraintTop_toTopOf="@id/tv_offered_by" />
+
+                <TextView
+                    android:id="@+id/tv_status_waiting"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:background="@drawable/my_button"
+                    android:backgroundTint="@color/ColorYellow"
+                    android:gravity="center_horizontal"
+                    android:includeFontPadding="false"
+                    android:padding="@dimen/_4sdp"
+                    android:text="@string/waiting_for_response"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_offered_by"
+                    tools:ignore="UnusedAttribute" />
+
+                <TextView
+                    android:id="@+id/tv_status_approved"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:background="@drawable/my_button"
+                    android:backgroundTint="@color/ColorGreen"
+                    android:gravity="center_horizontal"
+                    android:includeFontPadding="false"
+                    android:padding="@dimen/_4sdp"
+                    android:text="@string/approved"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_offered_by"
+                    tools:ignore="UnusedAttribute" />
+
+                <TextView
+                    android:id="@+id/tv_status_rejected"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:background="@drawable/my_button"
+                    android:backgroundTint="@color/ColorRed"
+                    android:gravity="center_horizontal"
+                    android:includeFontPadding="false"
+                    android:padding="@dimen/_4sdp"
+                    android:text="@string/rejected"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_offered_by"
+                    tools:ignore="UnusedAttribute" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
